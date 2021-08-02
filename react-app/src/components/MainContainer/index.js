@@ -15,13 +15,10 @@ function MainContainer() {
       type: Types.SET_IS_LOADING,
     });
     try {
-      const payload = {
-        _limit: size,
-        _page: current,
-      };
-      const { data } = await axiosClient.get("products", {
-        params: { ...payload, ...productsContext.payload.filters },
-      });
+      const data = productsContext.payload.allProducts.slice(
+        current * size - size,
+        current * size
+      );
       productsContext.dispatch({
         type: Types.CHANGE_CURRENT_PAGE,
         payload: {

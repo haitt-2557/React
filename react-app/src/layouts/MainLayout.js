@@ -32,9 +32,11 @@ function MainLayout({ children }) {
         console.log(error);
       }
     };
-    getProductInPage();
-    // eslint-disable-next-line
-  }, []);
+    if (productsContext.payload.products.length === 0) {
+      getProductInPage();
+    } // eslint-disable-next-line
+  }, [productsContext.payload.products]);
+
   return (
     <div>
       <Header />

@@ -60,6 +60,22 @@ function ShowResultFor() {
     };
   };
 
+  const clearProductByCategory = async () => {
+    const payload = { ...productsContext.payload.filters };
+    delete payload.categories_like;
+    const products = await axiosClient.get("products", {
+      params: payload,
+    });
+    const productsInPage = await axiosClient.get("products", {
+      params: { ...payload, _limit: 16, _page: 1 },
+    });
+    return {
+      products: products?.data,
+      productsInPage: productsInPage?.data,
+      filters: { ...payload },
+    };
+  };
+
   const handleClickCategory = async (category) => {
     productsContext.dispatch({
       type: Types.SET_IS_LOADING,
@@ -67,6 +83,15 @@ function ShowResultFor() {
     try {
       switch (category.level) {
         case 0: {
+          if (category.isActive) {
+            const { products, productsInPage, filters } =
+              await clearProductByCategory();
+            productsContext.dispatch({
+              type: Types.CLEAR_FILTER_CATEGORIES_LV0,
+              payload: { products, productsInPage, category, filters },
+            });
+            return;
+          }
           const { products, productsInPage, filters } =
             await getProductsByCategory(category.name);
 
