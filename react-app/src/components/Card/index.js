@@ -27,7 +27,7 @@ function Card(props) {
           <span className="group-price__star">
             {showRating(product?.rating)}
           </span>
-          <span className="price fw-7">$34.45</span>
+          <span className="price fw-7">{product?.price}</span>
         </div>
       </article>
     </Col>

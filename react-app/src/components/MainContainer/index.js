@@ -3,7 +3,6 @@ import React, { useContext } from "react";
 import Card from "../Card";
 import Sort from "./Sort";
 import { ProductsContext } from "../../contexts/context/context";
-import axiosClient from "../../untils/axiosClient";
 import { Types } from "../../constants/types";
 import "./style.scss";
 
@@ -39,9 +38,11 @@ function MainContainer() {
         <Spin className="spin__antd" size="large" />
       ) : (
         <Row gutter={[8, 8]} className="mt-2">
-          {productsContext.payload?.products?.map((product, index) => {
-            return <Card product={product} key={index}></Card>;
-          })}
+          {productsContext.payload?.products.length === 0
+            ? "Không tìm thấy sản phẩm phù hợp"
+            : productsContext.payload?.products?.map((product, index) => {
+                return <Card product={product} key={index}></Card>;
+              })}
         </Row>
       )}
       <Pagination

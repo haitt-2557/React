@@ -35,7 +35,7 @@ function MainLayout({ children }) {
     if (productsContext.payload.products.length === 0) {
       getProductInPage();
     } // eslint-disable-next-line
-  }, [productsContext.payload.products]);
+  }, []);
 
   return (
     <div>

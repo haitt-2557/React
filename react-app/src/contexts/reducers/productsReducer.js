@@ -138,6 +138,43 @@ export const productsReducer = (state = initialState, action) => {
       return { ...state };
     }
 
+    case Types.FILTER_BY_RATING: {
+      const { categories, types, brands } = getCategories(
+        action.payload.products
+      );
+      state = {
+        ...state,
+        allProducts: action.payload.products,
+        filters: { ...action.payload.filters },
+        isLoading: false,
+        types: types,
+        brands: brands,
+        showResultFor: categories,
+        products: action.payload.products.slice(0, 16),
+        panigations: {
+          currentPage: 1,
+          total: action.payload.products?.length,
+          size: 16,
+        },
+      };
+      return { ...state };
+    }
+    case Types.SEARCH_PRODUCT: {
+      state = {
+        ...state,
+        allProducts: action.payload.products,
+        filters: { ...action.payload.filters },
+        isLoading: false,
+        products: action.payload.products.slice(0, 16),
+        panigations: {
+          currentPage: 1,
+          total: action.payload.products?.length,
+          size: 16,
+        },
+      };
+      return { ...state };
+    }
+
     case Types.CHANGE_CURRENT_PAGE: {
       state = {
         ...state,
