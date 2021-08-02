@@ -1,8 +1,9 @@
 import { Types } from "../../constants/types";
-import { getCategories } from "../../untils/service";
+import { getCategories, getCategoriesLv1 } from "../../untils/service";
 
 const initialState = {
   products: [],
+  filters: {},
   isFilter: false,
   isLoading: false,
   showResultFor: [],
@@ -36,6 +37,31 @@ export const productsReducer = (state = initialState, action) => {
       };
       return { ...state };
     }
+
+    case Types.GET_CATEGORIES_LVL_0: {
+      const { categories, types, brands } = getCategoriesLv1(
+        action.payload.products,
+        state.showResultFor,
+        action.payload.category
+      );
+      state = {
+        ...state,
+        filters: { ...state.filters, ...action.payload.filters },
+        isFilter: true,
+        isLoading: false,
+        types: types,
+        brands: brands,
+        showResultFor: categories,
+        products: action.payload.productsInPage,
+        panigations: {
+          currentPage: 1,
+          total: action.payload.products?.length,
+          size: 16,
+        },
+      };
+      return { ...state };
+    }
+
     case Types.CHANGE_CURRENT_PAGE: {
       state = {
         ...state,

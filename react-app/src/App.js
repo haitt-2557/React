@@ -6,6 +6,7 @@ import { productsReducer } from "./contexts/reducers/productsReducer";
 
 const initialState = {
   products: [],
+  filters: {},
   isFilter: false,
   isLoading: false,
   showResultFor: [],
