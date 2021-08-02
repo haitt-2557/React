@@ -1,0 +1,77 @@
+@import '../../styles/var';
+
+#sidebar {
+	height: 100vh;
+	overflow-y: scroll;
+	position: fixed;
+	padding: 10px 20px;
+	top: 60px;
+	width: 230px;
+	.btn-clear-filter {
+		border: $border-light;
+		border-radius: 5px;
+		background-color: transparent;
+		outline: none;
+		padding: 5px 0;
+		width: 100%;
+		&:hover {
+			background-color: $color-gray;
+			color: $color-red;
+			cursor: pointer;
+		}
+	}
+	.show-result {
+		color: $color-back-light;
+	}
+
+	.rating-block {
+		.active {
+			font-weight: 500;
+			color: $color-red;
+		}
+		.list-rating {
+			cursor: pointer;
+			&__text:hover {
+				color: $color-red;
+			}
+			.is-rating {
+				font-size: x-small;
+				color: $color-yellow;
+			}
+		}
+	}
+
+	.price-block {
+		.active {
+			font-weight: 500;
+			color: $color-red;
+		}
+		.price-item {
+			cursor: pointer;
+			&:hover {
+				color: $color-red;
+			}
+		}
+	}
+
+	.block-type {
+		&__list {
+			cursor: pointer;
+		}
+	}
+
+	.refine-block {
+		.active {
+			font-weight: 500;
+			color: $color-red;
+		}
+
+		&__text {
+			cursor: pointer;
+			&:hover {
+				font-weight: 500;
+				color: $color-red;
+			}
+		}
+	}
+}

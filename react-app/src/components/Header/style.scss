@@ -1,0 +1,62 @@
+@import "../../styles/var";
+
+#header {
+  background: $color-bg-header;
+  height: 60px;
+  position: fixed;
+  padding: 10px;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  .header__container {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    .logo-is {
+      img {
+        height: 40px;
+        -o-object-fit: cover;
+        object-fit: cover;
+        width: 40px;
+      }
+    }
+    .logo-name {
+      color: $background-color;
+      line-height: 40px;
+      font-size: 30px;
+      font-weight: 700;
+    }
+    .input-group {
+      display: flex;
+      flex-wrap: nowrap;
+      position: relative;
+      .input-search {
+        input {
+          border-radius: 10px;
+          height: 40px;
+          padding: 0 10px;
+          width: 300px;
+          box-sizing: border-box;
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+      .input-group-btn {
+        position: absolute;
+        right: -50px;
+        top: 2px;
+        cursor: pointer;
+        button {
+          border: none;
+          border-top-right-radius: 10px;
+          border-bottom-right-radius: 10px;
+          background-color: $color-bg-btn-yl;
+          cursor: pointer;
+          height: 37px;
+          width: 80px;
+        }
+      }
+    }
+  }
+}

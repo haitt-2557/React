@@ -1,0 +1,13 @@
+#main-content {
+	top: 60px;
+	margin-left: 230px;
+	position: relative;
+	padding: 10px;
+	.sort__container {
+		display: flex;
+		justify-content: space-between;
+		span {
+			font-size: 12px;
+		}
+	}
+}
