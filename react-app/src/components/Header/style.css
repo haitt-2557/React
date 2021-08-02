@@ -1,0 +1,46 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  background-color: #222f3f;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+.logo {
+  width: 3.5rem;
+}
+.logo-text {
+  color: white;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.logo-text:hover {
+  color: white;
+}
+.btn {
+  outline: none;
+  border: none;
+  color: black;
+}
+
+.header-search {
+  display: flex;
+  background-color: #fff;
+  width: 30rem;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.header-search input {
+  flex: 1;
+  padding: 0.5rem 1rem;
+}
+.header-search button {
+  padding: 0 2rem;
+  background-color: #ffbe61;
+}

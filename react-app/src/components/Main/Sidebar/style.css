@@ -1,0 +1,79 @@
+.sidebar {
+    position: fixed;
+    top: 6.2rem;
+    bottom: 0;
+    left: 0;
+    width: 25rem;
+    padding: 2rem;
+    overflow-y: auto;
+}
+li:hover {
+    color: #b32500;
+}
+.clear-filter {
+    padding: 0.5rem 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+.clear-filter:hover {
+    color: #b32500;
+    background-color: #e6e6e6;
+}
+h2.categories-title {
+    padding-top: 2rem;
+    font-weight: 600;
+}
+h3.categories-title {
+    color: #888;
+    padding-bottom: 1rem;
+}
+.categories-dropdown {
+    padding-left: 1rem;
+    height: 0;
+}
+.categories-dropdown-active {
+    height: auto;
+    color: #b32500;
+}
+.categories-item {
+    cursor: pointer;
+    padding-left: 1rem;
+    position: relative;
+}
+.categories-item::before {
+    content: ">";
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1.2rem;
+}
+.sort-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.sort-search {
+    margin: 0.5rem 0;
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.sort-search input {
+    flex: 1;
+    padding: 0.3rem 0 0.3rem 0.5rem;
+}
+.sort-search button {
+    font-size: 1.4rem;
+    color: #337ab7;
+}
+.rate-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.price-range input {
+    border: 1px solid #ccc;
+    width: 7rem;
+}

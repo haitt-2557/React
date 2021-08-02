@@ -1,0 +1,616 @@
+{
+    "parentType": [
+        {
+            "id": 1,
+            "name": " Appliances"
+        },
+        {
+            "id": 2,
+            "name": " Audio"
+        },
+        {
+            "id": 3,
+            "name": " Cameras & Camcorders"
+        },
+        {
+            "id": 4,
+            "name": " Car Electronics & GPS"
+        },
+        {
+            "id": 5,
+            "name": " Cell Phones"
+        },
+        {
+            "id": 6,
+            "name": " Computers & Tablets"
+        },
+        {
+            "id": 7,
+            "name": " Health, Fitness & Beauty"
+        }
+    ],
+    "childrenType": [
+        {
+            "id": 1,
+            "parentType": 1,
+            "name": " Dishwashers"
+        },
+        {
+            "id": 2,
+            "parentType": 1,
+            "name": "Fans"
+        },
+        {
+            "id": 3,
+            "parentType": 1,
+            "name": "Freezers & Ice Makers"
+        },
+        {
+            "id": 4,
+            "parentType": 1,
+            "name": " Heaters "
+        },
+        {
+            "id": 5,
+            "parentType": 1,
+            "name": " Humidifiers "
+        },
+        {
+            "id": 6,
+            "parentType": 1,
+            "name": " Microwaves "
+        },
+        {
+            "id": 7,
+            "parentType": 1,
+            "name": " Ranges, Cooktops & Ovens "
+        },
+        {
+            "id": 8,
+            "parentType": 1,
+            "name": " Refrigerators "
+        },
+        {
+            "id": 9,
+            "parentType": 1,
+            "name": " Small Kitchen Appliances "
+        },
+        {
+            "id": 10,
+            "parentType": 1,
+            "name": " Washers & Dryers "
+        },
+        {
+            "id": 11,
+            "parentType": 2,
+            "name": " Auxiliary Input Cables "
+        },
+        {
+            "id": 12,
+            "parentType": 2,
+            "name": " Cables & Chargers "
+        },
+        {
+            "id": 13,
+            "parentType": 2,
+            "name": " Cases & Armbands "
+        },
+        {
+            "id": 14,
+            "parentType": 2,
+            "name": " Docks, Radios & Boomboxes "
+        },
+        {
+            "id": 15,
+            "parentType": 2,
+            "name": " FM Transmitters "
+        },
+        {
+            "id": 16,
+            "parentType": 2,
+            "name": " Headphones "
+        },
+        {
+            "id": 17,
+            "parentType": 2,
+            "name": " Home Audio "
+        },
+        {
+            "id": 18,
+            "parentType": 2,
+            "name": " Home Audio Accessories "
+        },
+        {
+            "id": 19,
+            "parentType": 2,
+            "name": " In-Home Speakers "
+        }
+    ],
+    "type": [
+        {
+            "id": 1,
+            "name": "Coffee/cappuccino"
+        },
+        {
+            "id": 2,
+            "name": "Food"
+        },
+        {
+            "id": 3,
+            "name": "Blenders"
+        },
+        {
+            "id": 4,
+            "name": "Multicookers"
+        },
+        {
+            "id": 5,
+            "name": "Portable beverage"
+        }
+    ],
+    "brand": [
+        {
+            "id": 1,
+            "name": "Hamilton Beach"
+        },
+        {
+            "id": 2,
+            "name": "KitchenAid"
+        },
+        {
+            "id": 3,
+            "name": "Cuisinart"
+        },
+        {
+            "id": 4,
+            "name": "Keurig"
+        },
+        {
+            "id": 5,
+            "name": "Black & Decker"
+        }
+    ],
+
+    "products": [
+        {
+            "id": 1,
+            "name": "Amazon - Fire TV Stick with Alexa Voice Remote - Black",
+            "price": 10,
+            "parentType": 1,
+            "childrenType": 1,
+            "type": 1,
+            "brand": 1,
+            "rate": 4,
+            "img": "https://cdn-demo.algolia.com/bestbuy-0118/1313531168_sb.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Google - Chromecast - Black",
+            "price": 20.4,
+            "parentType": 1,
+            "childrenType": 1,
+            "type": 1,
+            "brand": 1,
+            "rate": 3,
+            "img": "https://cdn-demo.algolia.com/bestbuy-0118/6386677_sb.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Dell - Inspiron 15.6\" Touch-Screen Laptop - Intel Core i5 - 6GB Memory - 1TB Hard Drive - Black",
+            "price": 56,
+            "parentType": 1,
+            "childrenType": 2,
+            "type": 1,
+            "brand": 1,
+            "rate": 2,
+            "img": "https://cdn-demo.algolia.com/bestbuy-0118/3828012_sb.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Amazon - Echo Dot",
+            "price": 350,
+            "parentType": 1,
+            "childrenType": 2,
+            "type": 1,
+            "brand": 1,
+            "rate": 5,
+            "img": "https://cdn-demo.algolia.com/bestbuy-0118/4835800_sb.jpg"
+        },
+        {
+            "id": 5,
+            "name": "Apple - MacBook Air® (Latest Model) - 13.3\" Display - Intel Core i5 - 8GB Memory - 128GB",
+            "price": 210,
+            "parentType": 1,
+            "childrenType": 2,
+            "type": 3,
+            "brand": 1,
+            "rate": 2,
+            "img": "https://cdn-demo.algolia.com/bestbuy-0118/5768586_sb.jpg"
+        },
+        {
+            "id": 6,
+            "name": "Sharp - 50\" Class (49.5\" Diag.) - LED - 1080p - Smart - HDTV Roku TV - Black",
+            "price": 199,
+            "parentType": 1,
+            "childrenType": 2,
+            "type": 3,
+            "brand": 1,
+            "rate": 3,
+            "img": "https://cdn-demo.algolia.com/bestbuy-0118/7775211_sb.jpg"
+        },
+        {
+            "id": 7,
+            "name": "Google - Google Home - White/Slate fabric",
+            "price": 5,
+            "parentType": 1,
+            "childrenType": 2,
+            "type": 3,
+            "brand": 2,
+            "rate": 1000,
+            "img": "https://cdn-demo.algolia.com/bestbuy-0118/8390036_sb.jpg"
+        },
+        {
+            "id": 8,
+            "name": "Apple - EarPods™ with Remote and Mic - White",
+            "price": 2333,
+            "parentType": 1,
+            "childrenType": 2,
+            "type": 3,
+            "brand": 2,
+            "rate": 1,
+            "img": "https://cdn-demo.algolia.com/bestbuy-0118/5655982_sb.jpg"
+        },
+        {
+            "id": 9,
+            "name": "Philips - hue A19 Smart LED Light Bulb - White Only",
+            "price": 499,
+            "parentType": 1,
+            "childrenType": 2,
+            "type": 3,
+            "brand": 2,
+            "rate": 3,
+            "img": "https://cdn-demo.algolia.com/bestbuy-0118/1792151_sb.jpg"
+        },
+        {
+            "id": 10,
+            "name": "Nintendo - amiibo Figure (The Legend of Zelda: Breath of the Wild Series Zelda)",
+            "price": 19,
+            "parentType": 1,
+            "childrenType": 2,
+            "type": 3,
+            "brand": 2,
+            "rate": 6,
+            "img": "https://cdn-demo.algolia.com/bestbuy-0118/1308183846_sb.jpg"
+        },
+        {
+            "id": 11,
+            "name": "Nintendo - amiibo Figure (The Legend of Zelda: Breath of the Wild Series Link (Archer))",
+            "price": 566,
+            "parentType": 1,
+            "childrenType": 3,
+            "type": 3,
+            "brand": 2,
+            "rate": 4,
+            "img": "https://cdn-demo.algolia.com/bestbuy-0118/9667333_sb.jpg"
+        },
+        {
+            "id": 12,
+            "name": "Roku - Express Streaming Media Player - Black",
+            "price": 199,
+            "parentType": 1,
+            "childrenType": 4,
+            "type": 1,
+            "brand": 2,
+            "rate": 3,
+            "img": "https://cdn-demo.algolia.com/bestbuy-0118/3458015_sb.jpg"
+        },
+        {
+            "id": 13,
+            "name": "Nintendo - amiibo Figure (The Legend of Zelda: Breath of the Wild Series Link (Rider))",
+            "price": 50,
+            "parentType": 1,
+            "childrenType": 4,
+            "type": 5,
+            "brand": 2,
+            "rate": 5,
+            "img": "https://cdn-demo.algolia.com/bestbuy-0118/4981000_sb.jpg"
+        },
+        {
+            "id": 14,
+            "name": "Rocketfish™ - Tilting TV Wall Mount for Most 32\"-70\" TVs - Black",
+            "price": 79,
+            "parentType": 1,
+            "childrenType": 4,
+            "type": 5,
+            "brand": 3,
+            "rate": 2,
+            "img": "https://cdn-demo.algolia.com/bestbuy-0118/4335802_sb.jpg"
+        },
+        {
+            "id": 15,
+            "name": "Nintendo - amiibo Figure (The Legend of Zelda: Breath of the Wild Series Guardian)",
+            "price": 799,
+            "parentType": 1,
+            "childrenType": 4,
+            "type": 5,
+            "brand": 3,
+            "rate": 4,
+            "img": "https://cdn-demo.algolia.com/bestbuy-0118/2498029_sb.jpg"
+        },
+        {
+            "id": 16,
+            "name": "LG - Ultra Slim 8x Max. DVD Write Speed External USB DVD±RW/CD-RW Drive - Black",
+            "price": 300,
+            "parentType": 1,
+            "childrenType": 5,
+            "type": 5,
+            "brand": 3,
+            "rate": 2,
+            "img": "https://cdn-demo.algolia.com/bestbuy-0118/7678017_sb.jpg"
+        },
+        {
+            "id": 17,
+            "name": "Beats by Dr. Dre - Powerbeats2 Wireless Earbud Headphones - Black/Red",
+            "price": 88,
+            "parentType": 1,
+            "childrenType": 5,
+            "type": 5,
+            "brand": 3,
+            "rate": 2,
+            "img": "https://cdn-demo.algolia.com/bestbuy-0118/5316104_sb.jpg"
+        },
+        {
+            "id": 18,
+            "name": "Ninja - Mega Kitchen System 72-Oz. Blender - Black",
+            "price": 199.99,
+            "parentType": 1,
+            "childrenType": 5,
+            "type": 5,
+            "brand": 3,
+            "rate": 4,
+            "img": "https://cdn-demo.algolia.com/bestbuy-0118/6957188_rb.jpg"
+        },
+        {
+            "id": 19,
+            "name": "Oster - Inspire 2-Slice Wide-Slot Toaster - Black",
+            "price": 19.99,
+            "parentType": 1,
+            "childrenType": 5,
+            "type": 5,
+            "brand": 3,
+            "rate": 4,
+            "img": "https://cdn-demo.algolia.com/bestbuy-0118/7007428_rb.jpg"
+        },
+        {
+            "id": 20,
+            "name": "Insignia™ - 0.7 Cu. Ft. Compact Microwave - Black",
+            "price": 69.99,
+            "parentType": 2,
+            "childrenType": 1,
+            "type": 5,
+            "brand": 4,
+            "rate": 1,
+            "img": "https://cdn-demo.algolia.com/bestbuy-0118/7823039_sb.jpg"
+        },
+        {
+            "id": 21,
+            "name": "Chefman - Express Air Fryer - Black",
+            "price": 1,
+            "parentType": 2,
+            "childrenType": 1,
+            "type": 1,
+            "brand": 4,
+            "rate": 4,
+            "img": "https://cdn-demo.algolia.com/bestbuy-0118/8579341_sb.jpg"
+        },
+        {
+            "id": 22,
+            "name": "Oster - 10-Speed Blender - Black",
+            "price": 449.99,
+            "parentType": 2,
+            "childrenType": 2,
+            "type": 2,
+            "brand": 4,
+            "rate": 4,
+            "img": "https://cdn-demo.algolia.com/bestbuy-0118/9784375_sb.jpg"
+        },
+        {
+            "id": 23,
+            "name": "Whirlpool - Cabrio 4.8 Cu. Ft. 26-Cycle High-Efficiency Top-Loading Washer - White",
+            "price": 224.99,
+            "parentType": 2,
+            "childrenType": 2,
+            "type": 2,
+            "brand": 4,
+            "rate": 4,
+            "img": "https://cdn-demo.algolia.com/bestbuy-0118/9784375_sb.jpg"
+        },
+        {
+            "id": 24,
+            "name": "Bosch - 500 Series 24\" Tall Tub Built-In Dishwasher with Stainless-Steel Tub - Stainless Steel",
+            "price": 287.99,
+            "parentType": 2,
+            "childrenType": 2,
+            "type": 2,
+            "brand": 4,
+            "rate": 4,
+            "img": "https://cdn-demo.algolia.com/bestbuy-0118/9784375_sb.jpg"
+        },
+        {
+            "id": 25,
+            "name": "Maytag - 5.3 Cu. Ft. 11-Cycle Top-Loading Washer - White",
+            "price": 49.99,
+            "parentType": 2,
+            "childrenType": 2,
+            "type": 2,
+            "brand": 4,
+            "rate": 3,
+            "img": "https://cdn-demo.algolia.com/bestbuy-0118/9784375_sb.jpg"
+        },
+        {
+            "id": 26,
+            "name": "Maytag - 4.3 Cu. Ft. 11-Cycle High-Efficiency Top-Loading Washer - White",
+            "price": 139.99,
+            "parentType": 2,
+            "childrenType": 2,
+            "type": 2,
+            "brand": 4,
+            "rate": 1,
+            "img": "https://cdn-demo.algolia.com/bestbuy-0118/3883007_rb.jpg"
+        },
+        {
+            "id": 27,
+            "name": "Samsung - 30\" Self-Cleaning Freestanding Gas Convection Range - Stainless Steel",
+            "price": 259.99,
+            "parentType": 2,
+            "childrenType": 3,
+            "type": 2,
+            "brand": 5,
+            "rate": 2,
+            "img": "https://cdn-demo.algolia.com/bestbuy-0118/3883007_rb.jpg"
+        },
+        {
+            "id": 28,
+            "name": "KitchenAid - 24\" Tall Tub Built-In Dishwasher - Stainless Steel",
+            "price": 109.99,
+            "parentType": 2,
+            "childrenType": 3,
+            "type": 4,
+            "brand": 5,
+            "rate": 3,
+            "img": "https://cdn-demo.algolia.com/bestbuy-0118/3883007_rb.jpg"
+        },
+        {
+            "id": 29,
+            "name": "iRobot - Roomba 860 Robot Vacuum - Silver",
+            "price": 199.99,
+            "parentType": 2,
+            "childrenType": 3,
+            "type": 4,
+            "brand": 5,
+            "rate": 4,
+            "img": "https://cdn-demo.algolia.com/bestbuy-0118/3883007_rb.jpg"
+        },
+        {
+            "id": 30,
+            "name": "Whirlpool - 1.7 Cu. Ft. Over-the-Range Microwave - Stainless Steel",
+            "price": 449.99,
+            "parentType": 2,
+            "childrenType": 3,
+            "type": 4,
+            "brand": 5,
+            "rate": 5,
+            "img": "https://cdn-demo.algolia.com/bestbuy-0118/9957442_rb.jpg"
+        },
+        {
+            "id": 31,
+            "name": "GermGuardian - 3-in-1 True HEPA Air Purifier - Gray",
+            "price": 149.99,
+            "parentType": 2,
+            "childrenType": 4,
+            "type": 4,
+            "brand": 5,
+            "rate": 5,
+            "img": "https://cdn-demo.algolia.com/bestbuy-0118/9957442_rb.jpg"
+        },
+        {
+            "id": 32,
+            "name": "Keurig - Donut Shop K-Cup® Pods (48-Pack)",
+            "price": 249.99,
+            "parentType": 2,
+            "childrenType": 4,
+            "type": 4,
+            "brand": 5,
+            "rate": 2,
+            "img": "https://cdn-demo.algolia.com/bestbuy-0118/9957442_rb.jpg"
+        },
+        {
+            "id": 33,
+            "name": "Insignia™ - 5.8 Cu. Ft. Upright Freezer - White",
+            "price": 299.99,
+            "parentType": 2,
+            "childrenType": 4,
+            "type": 4,
+            "brand": 5,
+            "rate": 3,
+            "img": "https://cdn-demo.algolia.com/bestbuy-0118/9784375_sb.jpg"
+        },
+        {
+            "id": 34,
+            "name": "Whirlpool - 3.5 Cu. Ft. 12-Cycle Top-Loading Washer - White",
+            "price": 99.99,
+            "parentType": 2,
+            "childrenType": 5,
+            "type": 4,
+            "brand": 5,
+            "rate": 5,
+            "img": "https://cdn-demo.algolia.com/bestbuy-0118/2146687_sb.jpg"
+        },
+        {
+            "id": 35,
+            "name": "Whirlpool - 3.5 Cu. Ft. 12-Cycle Top-Loading Washer - White",
+            "price": 209.99,
+            "parentType": 2,
+            "childrenType": 6,
+            "type": 3,
+            "brand": 5,
+            "rate": 5,
+            "img": "https://cdn-demo.algolia.com/bestbuy-0118/2146687_sb.jpg"
+        },
+        {
+            "id": 36,
+            "name": "Whirlpool - 3.5 Cu. Ft. 12-Cycle Top-Loading Washer - White",
+            "price": 199.98,
+            "parentType": 2,
+            "childrenType": 7,
+            "type": 3,
+            "brand": 5,
+            "rate": 5,
+            "img": "https://cdn-demo.algolia.com/bestbuy-0118/2146687_sb.jpg"
+        },
+        {
+            "id": 37,
+            "name": "Whirlpool - 3.5 Cu. Ft. 12-Cycle Top-Loading Washer - White",
+            "price": 199.98,
+            "parentType": 2,
+            "childrenType": 8,
+            "type": 3,
+            "brand": 5,
+            "rate": 5,
+            "img": "https://cdn-demo.algolia.com/bestbuy-0118/2146687_sb.jpg"
+        },
+        {
+            "id": 38,
+            "name": "Whirlpool - 3.5 Cu. Ft. 12-Cycle Top-Loading Washer - White",
+            "price": 199.98,
+            "parentType": 2,
+            "childrenType": 9,
+            "type": 3,
+            "brand": 5,
+            "rate": 3,
+            "img": "https://cdn-demo.algolia.com/bestbuy-0118/2146687_sb.jpg"
+        },
+        {
+            "id": 39,
+            "name": "Whirlpool - 3.5 Cu. Ft. 12-Cycle Top-Loading Washer - White",
+            "price": 9.99,
+            "parentType": 2,
+            "childrenType": 3,
+            "type": 3,
+            "brand": 5,
+            "rate": 3,
+            "img": "https://cdn-demo.algolia.com/bestbuy-0118/5050200_sb.jpg"
+        },
+        {
+            "id": 40,
+            "name": "Whirlpool - 3.5 Cu. Ft. 12-Cycle Top-Loading Washer - White",
+            "price": 9.99,
+            "parentType": 2,
+            "childrenType": 2,
+            "type": 1,
+            "brand": 5,
+            "rate": 3,
+            "img": "https://cdn-demo.algolia.com/bestbuy-0118/5050200_sb.jpg"
+        }
+    ]
+}
