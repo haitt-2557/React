@@ -101,6 +101,18 @@ function ShowResultFor() {
           });
           return;
         }
+
+        case 1: {
+          const { products, productsInPage, filters } =
+            await getProductsByCategory(category.name);
+
+          productsContext.dispatch({
+            type: Types.GET_CATEGORIES_LVL_1,
+            payload: { products, productsInPage, category, filters },
+          });
+          return;
+        }
+
         default:
           return;
       }

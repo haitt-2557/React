@@ -49,7 +49,6 @@ function FilterType() {
   const clearType = async () => {
     const payload = { ...productsContext.payload.filters };
     const products = await axiosClient.get("products", { params: payload });
-    setTotalProducts([...products.data]);
     return {
       products: [...products.data],
     };
