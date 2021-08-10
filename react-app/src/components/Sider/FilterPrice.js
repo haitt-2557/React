@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { TypesSuccess } from "../../constants/types";
 import axiosClient from "../../untils/axiosClient";
 import { useDispatch, useSelector } from "react-redux";
@@ -90,6 +90,12 @@ export default function FilterPrice() {
     }
     setIndex(i);
   };
+
+  useEffect(() => {
+    if (Object.keys(filters).length === 0) {
+      setIndex(null);
+    }
+  }, [filters]);
 
   const showListFilterPrice = (listPrice) => {
     return listPrice.map((price, i) => {
