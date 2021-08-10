@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { showRating } from "../Card/";
 import { TypesSuccess } from "../../constants/types";
 import { useDispatch, useSelector } from "react-redux";
@@ -41,6 +41,12 @@ export default function FilterRating() {
       setIndex(i);
     }
   };
+
+  useEffect(() => {
+    if (Object.keys(filters).length === 0) {
+      setIndex(null);
+    }
+  }, [filters]);
 
   const showListFilterRate = () => {
     const result = [];

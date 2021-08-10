@@ -33,13 +33,23 @@ function MainContainer() {
       {isLoading ? (
         <Spin className="spin__antd" size="large" />
       ) : (
-        <Row gutter={[8, 8]} className="mt-2">
-          {products.length === 0
-            ? "Không tìm thấy sản phẩm phù hợp"
-            : products?.map((product, index) => {
-                return <Card product={product} key={index}></Card>;
-              })}
-        </Row>
+        <>
+          <Row gutter={[8, 8]} className="mt-2">
+            {products.length === 0
+              ? "Không tìm thấy sản phẩm phù hợp"
+              : products?.map((product, index) => {
+                  return <Card product={product} key={index}></Card>;
+                })}
+          </Row>
+          <Pagination
+            className="mt-4 text-center"
+            current={panigations?.currentPage}
+            total={panigations?.total}
+            defaultPageSize="16"
+            pageSizeOptions={["16", "32", "64"]}
+            onChange={handleChangePage}
+          />
+        </>
       )}
       <Pagination
         className="mt-4 text-center"
